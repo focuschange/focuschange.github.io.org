@@ -3,7 +3,8 @@ description: > # this means to ignore newlines until "baseurl:"
   더 잊어버리기 전에 기록하려 합니다. 하얀눈길의 블로그~
 permalink: ':title/'
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://focuschange.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+#url: "http://focuschange.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "http://www.irgroup.org"
 site-twitter: #if your site has a twitter account, enter it here
 
 # Author Settings
