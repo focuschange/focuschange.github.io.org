@@ -30,3 +30,8 @@ Icon
 Network Trash Folder
 Temporary Items
 .apdisk
+
+# etc
+Gemfile.lock
+untitled.sublime-project
+untitled.sublime-workspace
