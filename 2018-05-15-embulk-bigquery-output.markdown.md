@@ -1,11 +1,15 @@
 ---
 layout: post
 title: MacOS에서 embulk를 사용한 vertica to bigquery 방법
-date: 2018-05-15 12:40:10 +0900
-description: embulk 설치부터 vertica input, bigquery out 방법 및 트러블 슈팅 기록
+date: '2018-05-15 12:40:10 +0900'
+description: 'embulk 설치부터 vertica input, bigquery out 방법 및 트러블 슈팅 기록'
 img: embulk-architecture.png
-tags: [embulk, bigquery, vertica, etl]
+tags: 'embulk,bigquery,vertica,etl'
+extensions:
+  preset: gfm
+
 ---
+
 
 > 다른 플랫폼간에 데이터 전송이나 ETL을 위해서 여러가지 툴이 존재한다고 합니다. 
 > 그 중 embulk를 소개받게 되어 사용성 테스트를 해 봤습니다. 
@@ -228,4 +232,5 @@ select 절에 구분자가 빠지면 word가 exact match되는 필드를 그냥 
  - vertica input plugin : https://github.com/sonots/embulk-input-vertica
  - https://medium.com/@jwlee98/embulk-%EC%9D%B4%EC%9A%A9%ED%95%B4%EC%84%9C-oracle-db-%EC%97%90%EC%84%9C-bigquery-%EB%A1%9C-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EB%A7%88%EC%9D%B4%EA%B7%B8%EB%A0%88%EC%9D%B4%EC%85%98-%EC%82%BD%EC%A7%88%EA%B8%B0-141dc1d62b73
  - config 변수는 liquid template engine을 사용 : https://shopify.github.io/liquid/
+
 
