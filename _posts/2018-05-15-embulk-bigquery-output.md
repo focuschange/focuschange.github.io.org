@@ -179,6 +179,7 @@ timestamp type은 ruby의 strftime format을 따릅니다. (참고 : https://doc
 
 # Troubleshooting 
 **embulk-output-bigquery를 0.4.6에서 0.4.7로 업그래이드 할 때**
+
 config.yml에 location 필드가 추가되야 합니다.(옵션이라면서 잘 안됩니다)
 google-api-client도 0.20.1로 업그래이드 되야 합니다.
 
@@ -188,6 +189,7 @@ google-api-client도 0.20.1로 업그래이드 되야 합니다.
 
 
 **vertica에서 bigquery로 직접 전송할 때 csv 포맷인식이 잘 안되는 경우**
+
 특별한 옵션을 주지 않는 한 중간 변환 및 전송을 위해서 embulk는 csv 파일을 사용합니다. 
 보통 /tmp 디렉토리 아래에 임시파일을 생성하는데요. 
 csv파일을 아무리 잘 만들어도 전송 시 오류가 발생하는 경우가 있습니다.
@@ -204,6 +206,7 @@ csv파일을 아무리 잘 만들어도 전송 시 오류가 발생하는 경우
 > 압축옵션 사용하지 않았다가 네트워크 대역폭 다 잡아먹었다고 욕먹었습니다. ㅠ_ㅠ
 
 **input data가 커서 timeout이 발생하는 경우**
+
 용량이 너무 크다보니 다음과 같은 에러가 발생하는 군요
 
     org.jruby.exceptions.RaiseException: (TransmissionError) execution expired
@@ -215,10 +218,12 @@ csv파일을 아무리 잘 만들어도 전송 시 오류가 발생하는 경우
 	read_timeout_sec : 7200
 
 **vertica select 절 구분자가 빠졌을 경우**
+
 이건 제가 vertica를 몰라서 생긴 문제였는데요. 
 select 절에 구분자가 빠지면 word가 exact match되는 필드를 그냥 가져옵니다.(정확한 표현은 아닙니다)
 이유는,  mysql의 'key as name" 이 버티카에서는 "key name"으로 사용됩니다.
 콤마(,)가 빠져서 bigquery에 필드가 하나 없어진 원인을 찾는데 한참 삽질했네요.
+
 
 # 참조
 
