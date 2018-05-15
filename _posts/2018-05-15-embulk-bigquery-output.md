@@ -126,10 +126,6 @@ gcp의 iam에서 서비스 계정을 만들 때, 키 유형을 반드시 json으
 input으로는 샘플로 생성한 csv파일을 사용하였습니다.
 output으로 bigquery로 직접 입력하도록 하였는데, 데이터셋이나 테이블 자동생성 옵션을 두었는데, 잘 되는 군요
 
-> 주의할 점이 있습니다.
-> embulk-output-bigquery가 0.4.7로 업그래이드 되면서 location 필드를 추가해야 합니다.
-> 이때, google-api-client도 0.20.1로 업그래이드 되야 합니다.
-> "embulk gem install google-api-client"
 
 # 5. vertica input 플러그인 사용법
 vertica input plugin 설치명령은 아래와 같습니다. 
@@ -174,10 +170,11 @@ config.yml 구성 시 주의할 것은 date, timestamp type에 대한 형 변환
 column_options에 해당하는 필드를 정의해 주면 되구요.
 아래와 같이 timestamp를 변형해 주니 bigquery에서도 동일한 type으로 잘 들어가는 군요
 
-    reg_dt: {value_type: string, type: timestamp, timestamp_format: "%Y-%m-%d %H:%M%S", timezone: "+0900"}
+    reg_dt: {value_type: string, timestamp_format: "%Y-%m-%d %H:%M%S", timezone: "+0900"}
 
 주의할 점은 vertica의 date, timestamp는 value_type을 반드시 string 타입으로 해 주어야 합니다.
-type은 vertica의 타입을 말하고, value_type은 embulk가 인식하는 type을 말합니다.
+embulk가 내부에서 string으로 처리하는 것 같습니다.
+
 timestamp type은 ruby의 strftime format을 따릅니다. (참고 : https://docs.ruby-lang.org/en/2.4.0/Date.html#method-i-strftime)
 
 # Troubleshooting 
