@@ -225,6 +225,7 @@ select 절에 구분자가 빠지면 word가 exact match되는 필드를 그냥 
  - embulk plugins referrence : http://www.embulk.org/plugins/
  - embulk bult-in configuration : http://www.embulk.org/docs/built-in.html
  - bigquery output plugin : https://github.com/embulk/embulk-output-bigquery
- - vertica input plugin : https://github.com/sonots/embulk-input-verticahttps://medium.com/@jwlee98/embulk-%EC%9D%B4%EC%9A%A9%ED%95%B4%EC%84%9C-oracle-db-%EC%97%90%EC%84%9C-bigquery-%EB%A1%9C-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EB%A7%88%EC%9D%B4%EA%B7%B8%EB%A0%88%EC%9D%B4%EC%85%98-%EC%82%BD%EC%A7%88%EA%B8%B0-141dc1d62b73
+ - vertica input plugin : https://github.com/sonots/embulk-input-vertica
+ - https://medium.com/@jwlee98/embulk-%EC%9D%B4%EC%9A%A9%ED%95%B4%EC%84%9C-oracle-db-%EC%97%90%EC%84%9C-bigquery-%EB%A1%9C-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EB%A7%88%EC%9D%B4%EA%B7%B8%EB%A0%88%EC%9D%B4%EC%85%98-%EC%82%BD%EC%A7%88%EA%B8%B0-141dc1d62b73
  - config 변수는 liquid template engine을 사용 : https://shopify.github.io/liquid/
 
