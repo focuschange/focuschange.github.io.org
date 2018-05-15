@@ -11,10 +11,10 @@ site-twitter: #if your site has a twitter account, enter it here
 author: 하얀눈길 # add your name
 author-img: hansnake.jpg # add your photo
 about-author: 이제는 노땅 개발자. 꼰대스럽지 말자!! # add description
-twitter: # add your Twitter handle
-facebook: # add your Facebook handle
+twitter: focuschange # add your Twitter handle
+facebook: focuschange # add your Facebook handle
 github: focuschange # add your Github handle
-linkedin: # add your Linkedin handle
+linkedin: focuschange # add your Linkedin handle
 email: focuschange@gmail.com
 
 # Disqus
