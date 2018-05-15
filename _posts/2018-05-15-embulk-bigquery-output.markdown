@@ -1,15 +1,13 @@
 ---
-
-
+layout: post
+title: MacOS에서 embulk를 사용한 vertica to bigquery 방법
+date: 2018-05-15 12:40:10 +0900
+description: embulk 설치부터 vertica input, bigquery out 방법 및 트러블 슈팅 기록
+img: embulk-architecture.png
+tags: [embulk, bigquery, vertica, etl]
 ---
 
 <hr>
-<h2 id="layout-posttitle-macos에서-embulk를-사용한-vertica-to-bigquery-방법date-2018-05-15-124010-0900description-embulk-설치부터-vertica-input-bigquery-out-방법-및-트러블-슈팅-기록img-embulk-architecture.pngtags-embulk-bigquery-vertica-etl">layout: post<br>
-title: MacOS에서 embulk를 사용한 vertica to bigquery 방법<br>
-date: 2018-05-15 12:40:10 +0900<br>
-description: embulk 설치부터 vertica input, bigquery out 방법 및 트러블 슈팅 기록<br>
-img: embulk-architecture.png<br>
-tags: [embulk, bigquery, vertica, etl]</h2>
 <blockquote>
 <p>다른 플랫폼간에 데이터 전송이나 ETL을 위해서 여러가지 툴이 존재한다고 합니다.<br>
 그 중 embulk를 소개받게 되어 사용성 테스트를 해 봤습니다.<br>
