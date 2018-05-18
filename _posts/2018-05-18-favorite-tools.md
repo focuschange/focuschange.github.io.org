@@ -45,7 +45,7 @@ date: '2018-05-18'
  - putty - https://www.putty.org/
 
 
-## ETC
+## ETC Tools
 
  - calculator - https://numi.io/ only mac :+1:
  - android emulator - https://kr.bignox.com/ :+1:
@@ -55,5 +55,37 @@ https://evernote.com/intl/ko/products/skitch
  - SCM - https://github.com/
  - countdown - https://itunes.apple.com/kr/app/countdown-widget/id506996014?mt=12
  - rest api - https://www.getpostman.com/
+
+## ETC Configure
+
+ - vim : https://github.com/amix/vimrc
+
+```bash
+" syntax Highlighting
+if has("syntax")
+    syntax on
+endif
+
+colorscheme evening
+
+" set cindent
+set nu
+set ts=4
+
+set nocp                    " 'compatible' is not set
+filetype plugin on          " plugins are enabled
+
+let g:netrw_banner = 0
+let g:netrw_liststyle = 3
+let g:netrw_browse_split = 4
+let g:netrw_altv = 1
+let g:netrw_winsize = 25
+
+augroup ProjectDrawer
+  autocmd!
+  autocmd VimEnter * :Vexplore
+augroup END
+```
+
 
 
