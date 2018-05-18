@@ -3,7 +3,7 @@ layout: post
 title: 개발에 유용한 툴들
 author: 하얀눈길
 description: null
-tags: 'developer-tool,개발툴'
+tags: [developer-tool,개발툴]
 featuredImage: null
 img: null
 categories: tool
