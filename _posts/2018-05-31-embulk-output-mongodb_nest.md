@@ -478,8 +478,8 @@ embulk는 사용하면 할 수록 참 편하다는 생각이 드네요. custom�
 
 ## 참고 
 
-**소스코드** : https://github.com/focuschange/embulk-output-mongodb_nest
-**ruby gem** : https://rubygems.org/gems/embulk-output-mongodb_nest
-**embulk customization** : http://www.embulk.org/docs/customization.html
+ - **소스코드** : https://github.com/focuschange/embulk-output-mongodb_nest
+- **ruby gem** : https://rubygems.org/gems/embulk-output-mongodb_nest
+- **embulk customization** : http://www.embulk.org/docs/customization.html
 
 
