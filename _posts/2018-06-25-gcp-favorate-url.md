@@ -1,6 +1,6 @@
 ---
 layout: post
-title: gcp 유용한 전보들
+title: gcp 유용한 정보들
 author: 하얀눈길
 description: null
 tags: [gcp, tutorial, compute-engine, information, cost-calculator, web-push, fcm]
