@@ -23,6 +23,9 @@ extensions:
 - 구글 전체 api list
 	- https://developers.google.com/apis-explorer/#p/
 
+- 구글 api client library
+	- https://developers.google.com/api-client-library/?authuser=2&hl=ko
+
 - gcp 가격 계산기  
 	- https://cloud.google.com/products/calculator/
 
