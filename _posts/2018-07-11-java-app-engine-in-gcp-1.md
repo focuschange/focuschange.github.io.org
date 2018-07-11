@@ -134,12 +134,41 @@ runtime을 위한 java8과 같이 꼭 필요한 설정이 들어 있다.
 ```
 
 
+## Gradle로 실행하기
+소스를 보니 gradle 환경설정이 되어 있다. 그래서 간단히 실행해보니 동일하게 잘 동작한다.
+
+### 로컬에서 실행
+
+```bash
+./gradlew appengineRun
+```
+
+### Deploy
+```
+./gradlew appengineDeploy
+```
+
+### 앱엔진 관련 명령
+솔직히 다 모르겠다~ :-(
+```
+'appengineDeploy' 
+'appengineDeployCron'
+'appengineDeployDispatch'
+'appengineDeployDos'
+'appengineDeployIndex'
+'appengineDeployQueue'
+'appengineRun'
+'appengineShowConfiguration'
+'appengineStage'
+'appengineStart'
+'appengineStop'
+```
 
 
 
 ## 참조
 * 구글 공식 문서 : https://cloud.google.com/appengine/docs/standard/java/
-
+* 앱엔진 개발 환경 세팅 : https://cloud.google.com/appengine/docs/standard/java/building-app/environment-setup
 
  
 
