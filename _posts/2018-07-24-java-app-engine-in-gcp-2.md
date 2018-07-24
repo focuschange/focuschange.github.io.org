@@ -13,6 +13,12 @@ extensions:
 
 ---
 
+#### 관련 포스팅
+1. [IntelliJ에 Google Cloud Tools 연동하기](http://www.irgroup.org/cloud-tools-for-intellij/)
+2. [자바 어플리케이션을 gcp app engine으로 구성하기 1 - 예제 실행해 보기](http://www.irgroup.org/java-app-engine-in-gcp-1/)
+3. [자바 어플리케이션을 gcp app engine으로 구성하기 2 - CloudSQL 연동](http://www.irgroup.org/java-app-engine-in-gcp-2/) - 이 문서
+
+
 ## 목표 
 * 앱엔진에서 CloudSQL 연동하기
 
