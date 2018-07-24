@@ -139,7 +139,9 @@ extensions:
 		  <service>cloudsql</service>  
 		  
 		  <system-properties>  
-			  <property  name="cloudsql"  value="jdbc:mysql://google/${database}?useSSL=false&amp;cloudSqlInstance=${INSTANCE_CONNECTION_NAME}&amp;socketFactory=com.google.cloud.sql.mysql.SocketFactory&amp;user=${user}&amp;password=${password}"  />  
+			  <property  name="cloudsql"  
+			  value="jdbc:mysql://google/${database}?useSSL=false&amp;cloudSqlInstance=${INSTANCE_CONNECTION_NAME}&amp;socketFactory=com.google.cloud.sql.mysql.SocketFactory&amp;user=${user}&amp;password=${password}"  
+			  />  
 		  </system-properties>  
 	  </appengine-web-app>
 	```
