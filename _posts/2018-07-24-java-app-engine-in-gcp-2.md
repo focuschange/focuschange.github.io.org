@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 자바 어플리케이션을 gcp app engine으로 구성하기 #2 - CloudSQL 연동
+title: 자바 어플리케이션을 gcp app engine으로 구성하기 2 - CloudSQL 연동
 author: 하얀눈길
 description: develop java application in app engine in gcp
 tags: [app-engine, cloudSql, gcp, java]
