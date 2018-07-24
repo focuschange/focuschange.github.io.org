@@ -13,6 +13,15 @@ extensions:
 
 ---
 
+> GCP에서 서비스 구축할 일이 있어서 이것저것 공부중입니다. 생각보다 쉬운데.. 문서를 이해하는 시간이 더 오래 걸리는군요.
+> 이 시리즈는 아래 3개로 구성하였습니다. intelliJ를 사용하려고 이것저것 테스트하다보니 포스팅 시간이 오래걸리네요.
+
+#### 관련 포스팅
+1. [IntelliJ에 Google Cloud Tools 연동하기](http://www.irgroup.org/cloud-tools-for-intellij/)
+2. [자바 어플리케이션을 gcp app engine으로 구성하기 1 - 예제 실행해 보기](http://www.irgroup.org/java-app-engine-in-gcp-1/) - 이 문서
+3. [자바 어플리케이션을 gcp app engine으로 구성하기 2 - CloudSQL 연동](http://www.irgroup.org/java-app-engine-in-gcp-2/)
+
+
 ## 목표
 * Hello World 샘플 프로그램을 통해 앱엔진 맛보기
 
@@ -79,6 +88,7 @@ cd getting-started-java/appengine-standard-java8/helloworld`
 	```
 3. 결과 확인
 브라우저가 실행되면서 아래와 같이 화면이 나타나면 성공~
+
 ![실행 결과 화면](http://www.irgroup.org/assets/img/Hello_App_Engine_Standard_Java_8.jpg)
 
 
@@ -101,8 +111,25 @@ import javax.servlet.http.HttpServletResponse;
   
 // With @WebServlet annotation the webapp/WEB-INF/web.xml is no longer required.  
 @WebServlet(name =  "HelloAppEngine", value =  "/hello")  
-public  class  HelloAppEngine  extends  HttpServlet  {  @Override  public  void doGet(HttpServletRequest request,  HttpServletResponse response)  throws  IOException  {  Properties properties =  System.getProperties(); response.setContentType("text/plain"); response.getWriter().println("Hello App Engine - Standard using "  +  SystemProperty.version.get()  +  " Java "  + properties.get("java.specification.version"));  }  public  static  String getInfo()  {  return  "Version: "  +  System.getProperty("java.version")  +  " OS: "  +  System.getProperty("os.name")  +  " User: "  +  System.getProperty("user.name");  }  
-  
+public  class  HelloAppEngine  extends  HttpServlet  
+{  
+	@Override  
+	public  void doGet(HttpServletRequest request,  HttpServletResponse response)  throws  IOException  
+	{  
+		Properties properties =  System.getProperties(); 
+		response.setContentType("text/plain"); 
+		response.getWriter().println("Hello App Engine - Standard using "  
+		+  SystemProperty.version.get()  
+		+  " Java "
+		+ properties.get("java.specification.version"));  
+	}  
+
+	public  static  String getInfo()  
+	{  
+		return  "Version: "  +  
+			System.getProperty("java.version")  +  " OS: "  +  
+			System.getProperty("os.name")  +  " User: "  +  System.getProperty("user.name");  
+	}  
 }
 ```
 
