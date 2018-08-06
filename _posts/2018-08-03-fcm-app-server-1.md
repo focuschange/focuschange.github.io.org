@@ -365,7 +365,7 @@ public static void main(String[] args) throws IOException
 
 실행해 보니 잘 가네요.
 
-## 추가
+## 문제 해결
 처음 보낼 때, 403 에러가 뜨면서 아래와 같이 리턴되는 경우가 있다.
 
 ```javascript
