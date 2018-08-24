@@ -59,6 +59,7 @@ https://evernote.com/intl/ko/products/skitch
  - SCM - https://github.com/
  - countdown - https://itunes.apple.com/kr/app/countdown-widget/id506996014?mt=12
  - rest api - https://www.getpostman.com/
+ - file transfer(any platform) - https://send-anywhere.com/
 
 ## ETC Configure
 
