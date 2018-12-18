@@ -92,7 +92,8 @@ extensions:
 윈도우인 경우는 `%APPDATA%\MySQL` 디렉토리에 `.mylogin.cnf` 파일이 생성됩니다. unix계열은 로그인 계정의 홈 디렉토리에  파일이 생성됩니다. 
 이 파일은 암호화 되어 있는 것으로 보이네요. 당연하겠지요
  
- # troubleshooting 
+ 
+# Troubleshooting 
 *  "ERROR 1045 (28000): Access denied for user" 에러가 발생하는 경우
 	* 당황하지 말고, 패스워드 입력할 때, `"`를 앞뒤로 붙여서 입력합니다. 특수기호(#,$,! 등)이 들어가 있으면 발생할 수 있습니다.
 
