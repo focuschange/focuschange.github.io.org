@@ -1,38 +1,22 @@
+# hidden files
+.*
+!.git*
+!.editorconfig
+!.nojekyll
+!.travis.yml
+
+# bundler cache
 _site
-.sass-cache
-.jekyll-metadata
-yarn.lock
-node_modules/
+vendor
 
-### macOS ###
-*.DS_Store
-.AppleDouble
-.LSOverride
+# rubygem
+*.gem
 
-# Icon must end with two \r
-Icon
+# npm dependencies
+node_modules
+package-lock.json
 
-# Thumbnails
-._*
-
-# Files that might appear in the root of a volume
-.DocumentRevisions-V100
-.fseventsd
-.Spotlight-V100
-.TemporaryItems
-.Trashes
-.VolumeIcon.icns
-.com.apple.timemachine.donotpresent
-
-# Directories potentially created on remote AFP share
-.AppleDB
-.AppleDesktop
-Network Trash Folder
-Temporary Items
-.apdisk
-
-# etc
+_posts/2021-12-14-test.md
 Gemfile.lock
-untitled.sublime-project
-untitled.sublime-workspace
-_posts/.stackedit-data/
+_layouts/post.html.org
+_layouts/post.html.utterance
